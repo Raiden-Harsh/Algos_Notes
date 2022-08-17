@@ -18,3 +18,4 @@ Step_3) If the scenario is of type:
         Case 1: we search from the start to the (middle-1)'th element
         Case 2: we have our answer (This is the best case scenario)
         Case 3: we search from the (middle+1)'st element to the end of the array
+Step_4) Do step 1 to 3 till you find the answer!
