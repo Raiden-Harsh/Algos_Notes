@@ -1,0 +1,11 @@
+This is the theory behind the binary search...
+NOTE: BINARY SEARCH ONLY WORKS ON SORTED ARRAYS
+let us assume we have a sorted array as:
+   arr = p[2,4,5,7,8,9,14,18,19,55];
+   and our target element is say "14"
+To find the target element in this sorted array we do the following steps :
+Step_1) Find the middle element
+Step_2) Check weather the target is
+            less than the middle element // case 1
+            equal to the middle element
+            greater than the middle element
