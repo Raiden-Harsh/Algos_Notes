@@ -25,3 +25,24 @@ NOTE: WE WILL USE VARIABLES LIKE "start", "middle", "end" as our index pointers!
 #######################################################
 NOTE: IF "start">"end" then Target is not in the array!
 #######################################################
+~~~~~~~~~~~~~~~~~~~ BEST & WORST CASE SCENARIO ~~~~~~~~~~~~~~~~~~~~~~~~~
+BEST CASE: we found the element in first try i.e. target was at "middle"
+WORST CASE: we found/not found  the element in the last try!
+    suppose we have "k" levels to find the target,
+    in 0'th level we will traverse full array i.e. size=N or N/2^0
+    in 1'th level we will reduce the size of array by half  i.e. size =(N/2) = N/2 or N/2^1
+    in 2'th level we will reduce the size of array by half again i.e. size =(N/2)/2 = N/4 or N/2^2
+    in 3'th level we will reduce the size of array by half again i.e. size =(N/4)/2 = N/8 or N/2^3
+    in k'th level we will reduce the size of array by half again i.e. size =(N/2^(k-1)/2 = N/2^k
+    WE KNOW AT k'th LEVEL SIZE WOULD BE 1
+    N/2^k =1
+    N = 2^k
+    log(N) = log(2^k)
+    log(N) = k*log(2)
+    k = log(N)/log2
+    or
+    k = log_base2(N)
+    SO WE HAVE A WORST CASE TIME COMPLEXITY OF log(N)
+    ###############################################################
+    NOTE: we ignore any constant terms while using time complexity!
+    ###############################################################
