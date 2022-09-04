@@ -22,6 +22,12 @@ public class CeilingOfNumber {
     static int findTheCeiling(int[] arr,int target){
         int start=0;
         int end = arr.length-1;
+        /*
+        * Just an edge case
+        * if the target is the largest number in the array then it will not have any ceiling!
+        */
+        if(target>arr[arr.length-1])
+            return -1;
 
         while(start<=end){
             int mid = start+(end-start)/2;
