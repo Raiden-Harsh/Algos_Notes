@@ -4,9 +4,10 @@ public class BinarySearchCode {
     public static void main(String[] args) {
         //just a sorted array!
         int[] arr ={-12,-10,-5,0,2,5,7,12,35,36,77};
-        int target = 12;
+        int target = 13;
         int ans = BinarySearch(arr,target);
         System.out.println("Target is at :"+ans);
+
 
     }
 
@@ -31,4 +32,4 @@ public class BinarySearchCode {
         }
         return -1;
     }
-}
+   }
