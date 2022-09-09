@@ -7,41 +7,41 @@ Q) Search the target in mountain array!
  */
 public class SearchInMountainArray {
     public static void main(String[] args) {
-        int[] arr = {1,3,5,6,7,4,2,0,-1};
-        int target =3;
-        int answer = ans(arr,target);
+        int[] arr = {1, 3, 5, 6, 7, 4, 2, 0, -1};
+        int target = 3;
+        int answer = ans(arr, target);
         System.out.println(Arrays.toString(arr));
-        System.out.println("target :"+ target + " is at index: "+answer);
+        System.out.println("target :" + target + " is at index: " + answer);
 
     }
-    static int ans(int[] arr,int target){
+
+    static int ans(int[] arr, int target) {
         int highestIndex = highestInMountain(arr);
         //first to search in ascending order!
-        int ans = BinarySearch(arr,0,highestIndex,target,true);
-        if(ans==-1)
-            ans = BinarySearch(arr,highestIndex,arr.length-1,target,false);
+        int ans = BinarySearch(arr, 0, highestIndex, target, true);
+        if (ans == -1)
+            ans = BinarySearch(arr, highestIndex, arr.length - 1, target, false);
 
         return ans;
     }
-    static int BinarySearch(int[] arr,int start,int end,int target,boolean isAscending){
-        while (start<=end){
-            int middle = start+(end-start)/2;
 
-            if(isAscending){
-                if(target>arr[middle])
-                    start=middle+1;
-                else if(target<arr[middle])
-                    end=middle-1;
+    static int BinarySearch(int[] arr, int start, int end, int target, boolean isAscending) {
+        while (start <= end) {
+            int middle = start + (end - start) / 2;
+
+            if (isAscending) {
+                if (target > arr[middle])
+                    start = middle + 1;
+                else if (target < arr[middle])
+                    end = middle - 1;
                 else //target = middle
                     return middle;
-            }
-            else {
-                if(target<arr[middle])
-                    start=middle+1;
-                else if (target>arr[middle]) {
-                    end=middle-1;
-                }
-                else
+            } else {
+                if (target < arr[middle])
+                    start = middle + 1;
+                else if (target > arr[middle]) {
+                    end = middle - 1;
+                } else
                     return middle;
             }
         }
