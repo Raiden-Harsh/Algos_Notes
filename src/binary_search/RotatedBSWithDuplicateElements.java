@@ -123,9 +123,20 @@ Here the pivot is 9 as it is the largest element of the array!
             }
             //left side is sorted, so pivot should be in right!
             else if (arr[start] < arr[mid] || (arr[start] == arr[mid] && arr[mid] > arr[end])) {
-                start = mid + 1;
+                /*
+                If start < mid i.e. left side is sorted so that the pivot must be on the right side
+                but since we have duplicate elements it is also a possibility that start and middle are equal
+                now if the pivot lies on the right side it should be like mid,..,pivot,...end and as the pivot
+                is the largest number, so end should be smaller than the middle!
+                as from mid the numbers will rise till pivot and then form pivot+1 till end it will again be an
+                ascending sorted array!!
+                and we also know all the elements from start to mid will be larger or equal to the end element,
+                hence the middle element will be greater than the end....
+                THIS IS WHY WE HAVE 2 CHECKS IN THE OR PART OF IF!!
+                 */
+                start = mid + 1;//pivot in right side so check in right
             } else {
-                end = mid - 1;
+                end = mid - 1;// pivot in left side so check in left!
             }
         }
         //if we are not returning anything in the while loop
