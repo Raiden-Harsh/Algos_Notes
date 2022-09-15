@@ -1,0 +1,59 @@
+The concept of bubble sort is quite simple, It is like when you put something heavy in water it sinks, and
+the bubbles arise. Something like this is done in the bubble sort as well.
+What we do in bubble sort:
+    > We traverse the array, and we compare each element to its adjacent element.
+    > If the adjacent element is smaller we swap them. (or we can say if we are the j-th element then
+      the element at (j-1)-th index, if larger than j-th element will be swapped )
+    > We do it for multiple passes and ignore from the last element of the previous pass. As it will be sorted.
+    > After each pass the largest will sink at the end.(so, it is also known as sinking sort as well)
+    > If we have a 'i' counter that will tell how many times the pass would happen & 'j' that will traverse the array then,
+      each time we will ignore the last elements, so our j will start from 0'th index, and go till j<N-i, where N is
+      the size of array!
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Bubble Sort is a STABLE ALGORITHM:
+  NOTE: A stable algorithm is one in which after the application of algorithm, the order will remain intact.
+  Let's say we have this array:
+    10,30,(20),20,(10) // assume here the values in brackets have different properties even if they have same value.
+    so, after applying BubbleSort we will get:
+    10,(10),(20),20,30
+    as we can see that 10 come before (10) and (20) come before 20 as in the original array,
+    so the order of occurance doesn't change.
+    Hence, Stable algorithm.
+  AN UNSTABLE ALGORITHM WOULD LOOK SOMETHING LIKE THIS: (10),10,(20),20,30
+    here, it is not mandatory that the order would remain same!
+Time and Space Complexity of Bubble Sort:
+Space Complexity is O(1) i.e. constant as no new space is required (no new array is being generated!) to perform the Bubble Sort.
+Time Complexity:
+    Best Case: Our best case would be the array is already sorted, so TIME COMPLEXITY : O(N) where N is the size of array!
+    Worst Case: Worst case would be if the array is sorted in opposite order, i.e.
+                if we want an ascending order array, but we were given a descending sorted array!
+                TIME COMPLEXITY: O(N*N) //big O of N squared!
+
+    how do we get O(N*N):
+    let say we have an array like: 5,4,3,2,1 and we apply bubble sort on this,
+        for the first pass the value of i = 0, and j will traverse up to but not including (N-i), 5-0 = 5,
+        since 5 is not included, so it will traverse till J<5 which is 4.
+        for second pass, i = 1, j = N-1
+        for third pass, i = 2, j = N-2
+        for fourth pass, i = 3, j = N-3
+        for fifth pass, i = 4, j = N-4
+        after that the array is sorted!
+        so we can see the comparisons it is making are:
+            (N-1)+(N-2)+(N-3)+(N-4)
+            = 4N -(1 + 2+ 3 + 4)
+
+            [-=-=-=-=-= SIMPLE MATHS -=-=-=-=-=-
+            generally speaking, if the array has M elements, so it will run M-1 times,
+            so, to generalise our example we can say:
+            1+2+3+4 can be written as: N*(N+1)/2 //where N is the number up-to which the sum has to be done!
+            here, in our example N = 4 so 4*(4+1)/2 = 10 which is same as 1+2+3+4
+            ]
+            = 4N - (N*(N+1)/2)
+            = (8N - N*N -N)/2
+            = (7N - N*N)/2
+            NOTE: in time complexities all the constant terms and the less dominating terms are ignored!
+            Hence, our time complexity will be O(N²)
+
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
