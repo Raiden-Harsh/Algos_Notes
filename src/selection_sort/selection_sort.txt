@@ -1,0 +1,33 @@
+The concept of selection sort is as simple as it gets. We can do it in two ways:
+    > first: we can select the maximum element in the array and place it at its position.
+    > second: we can select the minimum element in the array and place it at its position.
+-=-=-=-=-=--=-=-=-=-=--=-=-=-=-=--=-=-=-=-=--=-=-=-=-=--=-=-=-=-=--=-=-=-=-=--=-=-=-=-=--=-=-=-=-=-
+Some information regarding the Selection Sort:
+    > It is an unstable algorithm.(Order of the elements is not conserved)
+    > Space Complexity is : O(1) i.e. constant space complexity
+    > Time Complexity:
+        > Best Case: O(N²)
+        > Worst Case: O(N²)
+-=-=-=-=-=--=-=-=-=-=--=-=-=-=-=--=-=-=-=-=--=-=-=-=-=--=-=-=-=-=--=-=-=-=-=--=-=-=-=-=--=-=-=-=-=-
+Let's understand the time complexity with an example:
+    suppose we have: {3,5,2,1,4} lets it's size be N = 4.
+    Now,
+     the comparison it needs to make in the first pass: N
+     the comparison it needs to make in the second pass: N-1 (as the last element is at its correct index)
+     the comparison it needs to make in the third pass: N-2
+     the comparison it needs to make in the fourth pass: N-3
+     .
+     .
+     the comparison it needs to make in the last pass: 1
+
+     so, the total comparisons made are:
+      = N + (N-1) + (N-2) + (N-3) + ...+ 1
+      = 4N - (1 + 2 + 3 + 4 )
+      = 4N - (N*(N+1)/2)
+      = (8N - N²-N)/2
+      = (7N - N²)/2
+      -> IGNORING THE LESS DOMINATING TERM AND CONSTANTS
+       we get a complexity of O(N²)
+-=-=-=-=-=--=-=-=-=-=--=-=-=-=-=--=-=-=-=-=--=-=-=-=-=--=-=-=-=-=--=-=-=-=-=--=-=-=-=-=--=-=-=-=-=-
+
+
