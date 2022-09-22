@@ -1,0 +1,48 @@
+Insertion Sort:
+In this algorithm, we start form index 1 and check if it is smaller than the previous index.If it is,
+then we swap it!
+we are taking an element and inserting it into it's correct index hence, the name InsertionSort
+example: {3,2,1,5,4} suppose we have this array to apply insertion sort,
+    > we will use two loops iterators
+        => 'i' start from 0 till N - 2 , where, N is the size of array
+        => 'j' start form i+1 till it is > 0,
+        NOTE: 'i' is going till N-2 because 'j' is i+1, and if 'i' goes to N-1 then 'j' will be N, and we will get INDEX
+        OUT OF BOUNDS.
+first pass: i = 0, j = 1, N = 5
+    > here 'i' will point to 3, 'j' will point to 2, and we will check if 'j' element is smaller than 'j-1',
+        >if true we will swap them
+        >if false we will break the 'j' loop as all the elements prior to 'j' will be automatically sorted by other passes.
+    now our array will become {2,3,1,5,4}
+    and 'j' will be j-- so j=0 this will break the 'j' loop.
+second pass: i = 1, j = i+1 = 2, N =5
+    > now 'i' will point at 2 and 'j' will point at 1
+    > we will check if 'j' i.e. 1 is smaller than 'i' i.e. 2 , here yes then we will swap.
+    after swap, we will get {2,1,3,5,4}
+    now, 'j' will be j-- i.e. 1
+    now we again check if 'j' i.e. 1 is smaller than 'j-1' i.e. 2 here true, then we swap.
+    after swap, we get: {1,2,3,5,4}
+third pass: i = 2, j = 2+1 =3, N = 5
+    >now, 'j' i.e. 5 < 'j-1' i.e. 3 here false, then break.
+    NOTE: we are breaking because it is useless to check beyond j-1 as the array is sorted by previous passes!
+fourth pass: i = 3, j = 3+1 = 4, N = 5
+    >now,array we have till now: {1,2,3,5,4}
+    we check 'j' i.e. 4 < 'j-1' i.e. 5 here, true then swap!
+    {1,2,3,4,5}
+    now, 'j' will be j-- i.e. j = 3
+    we check, 'j' i.e. 4 is < 'j-1' i.e. 3 here, false so will break !
+Now i will be 4 which is > then N-2 so the outer loop will break as well!
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Time and Space complexity:
+
+Space Complexity is O(1) : constant space complexity, as now new arrays are created!
+Time complexity:
+    Best Case (already sorted in ascending order) : O(N)
+        > as for each 'i' 'j' has to make one comparison before break!
+    Worst Case (array sorted in descending order) : O(N²)
+        > as for each 'i' 'j' has to make N-1,N-2, ... comparisons
+-=-=-=-=-=-=-=-=-
+Why use Insertion Sort:
+    > # of steps reduced
+    > stable i.e. order of items are maintained.
+    > better used with small N
+    > works best if the array is partially sorted, that's why used with HYBRID SORTING algorithms !
