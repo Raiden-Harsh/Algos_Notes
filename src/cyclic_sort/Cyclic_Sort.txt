@@ -1,0 +1,37 @@
+Cyclic Sort or Cycle Sort:
+WHEN ARE WE GOING TO USE THIS:
+    > WHEN WE KNOW WE HAVE NUMBERS IN THE RANGE OF 1 TO N (all numbers from 1 to N should be present!).
+    > WHEN WE ARE ASKED TO DO IT IN ONE PASS i.e. The Worst Case time complexity O(N).
+
+Steps and Thinking :
+Let's say we have an N = 5, and the array is {3,2,1,5,4}
+when it is completely sorted, we will have {1,2,3,4,5}
+    > we can see that the Index for each element is (element - 1), like 1 @ 0, 2 @ 1, etc.
+    So, In our unsorted array {3,2,1,5,4},
+    we can check,
+    first element i.e. 3 if is it at it's correct position!
+        > if not then swap it with its correct position
+        > if it is already at the correct index then check the next index
+    Now, in our example first element i.e. 3 is not at its correct position, so we swap it with its correct index
+         which is (3-1) = 2
+    after swap, {1,2,3,5,4}
+    Now, we don't know the element with which it's swapped if it is at the correct index or not.
+    we check for it,
+    1 (element @ 0) should be at (1-1) = 0th index, which is it, so we go to the next element!
+    now, 2 (element @ 1) should be at (2-1) = 1st index, which it is , so we go to the next element.
+    now, 3 (element @ 2) is also at its correct index. so we move forward again.
+    now, 5 (element @ 3) should be at (5-1) = 4th index, so we swap it to its correct index
+    after swap,{1,2,3,4,5}
+    now, we check 4 (element @ 3) should be @ (4-1) = 3rd index which it is. hence the array is sorted,
+    we check till N-1 element because if N-1 elements are sorted then the Nth will also be sorted duh!
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+Space and Time complexity:
+Space complexity is: O(1) i.e. constant space complexity.
+Time complexity:
+    > Best Case (already sorted): only N-1 comparison should be made so O(N)
+    > Worst Case: N {comparison for 0th index till N} + (N-1){comparison from 1st index till N} comparison
+                 = 2N -1 total comparison. so, O(N)
+
+
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
