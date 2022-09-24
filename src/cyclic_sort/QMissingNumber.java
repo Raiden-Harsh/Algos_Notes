@@ -9,7 +9,7 @@ import java.util.Arrays;
 
 public class QMissingNumber {
     public static void main(String[] args) {
-        int[] arr = {3,2,1,5,0};
+        int[] arr = {3,2,1,4,0};
         System.out.println("Before sorting: ");
         System.out.println(Arrays.toString(arr));
         int ans = ans(arr);
@@ -23,7 +23,8 @@ public class QMissingNumber {
             }
 
         }
-        return -1;// this will never return -1 it's just for the sake of compilation error!
+        // this means that N is not in the array! so we return that
+        return arr.length;
     }
 
     static void cyclicSort(int[] arr){
