@@ -1,0 +1,29 @@
+String name = "Harsh Vardhan Sharma"
+here, String -> Data type (String is a java class)
+      name -> reference variable (Stored in Stack memory)
+      "Harsh Vardhan Sharma" -> string object (Stored in string pool inside Heap memory)
+-=-=-=-=-=-=-
+String Pool: it is a separate location inside the Heap Memory which contains all the string objects,
+             if similar string objects are declared then no new string object will be created in the pool.
+             ex. String a  = "Harsh";
+                 String b  = "Harsh";
+                 here,
+                    'a' and 'b' both will point to the same "Harsh object!"
+                    if(a == b) // this will give true as a,b are pointing to the same object.
+-=-=-=-=-=-=-=-=-
+Immutability of Strings:
+-> Once a string object is created it can't be modified.
+example: String a = "Harsh";
+         sout(a) => [Harsh]
+         a = "Vardhan"
+         sout(a) => [Vardhan]
+         here, when we assign "Vardhan" to 'a' a new string object "Vardhan" is created, and 'a' points to that.
+         nothing is pointing to "Harsh" in the string pool, so it will be deleted by Garbage Collector.
+
+-=-=-=-=-=-=-=-=-=-=-
+How to create different String objects with same values.
+String a = new String("Harsh");
+String b = new String("Harsh");
+Now,
+    if(a == b) // this will give false as a and b are pointing to different objects.
+NOTE: here, "Harsh" String object will not be in string pool but will lie in Heap memory.
