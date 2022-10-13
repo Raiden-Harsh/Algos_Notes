@@ -1,0 +1,28 @@
+
+                                                                               ,----..            ,--.
+,-.----.       ,---,.  ,----..               ,-.----.    .--.--.      ,---,   /   /   \         ,-- .'|
+\    /  \    ,'  .' | /   /   \         ,--, \    /  \  /  /    '. ,`--.' |  /   .     :    ,--,:  : |
+;   :    \ ,---.'   ||   :     :      ,'_ /| ;   :    \|  :  /`. / |   :  : .   /   ;.  \,`--.'`|  ' :
+|   | .\ : |   |   .'.   |  ;. / .--. |  | : |   | .\ :;  |  |--`  :   |  '.   ;   /  ` ;|   :  :  | |
+.   : |: | :   :  |-,.   ; /--`,'_ /| :  . | .   : |: ||  :  ;_    |   :  |;   |  ; \ ; |:   |   \ | :
+|   |  \ : :   |  ;/|;   | ;   |  ' | |  . . |   |  \ : \  \    `. '   '  ;|   :  | ; | '|   : '  '; |
+|   : .  / |   :   .'|   : |   |  | ' |  | | |   : .  /  `----.   \|   |  |.   |  ' ' ' :'   ' ;.    ;
+;   | |  \ |   |  |-,.   | '___:  | | :  ' ; ;   | |  \  __ \  \  |'   :  ;'   ;  \; /  ||   | | \   |
+|   | ;\  \'   :  ;/|'   ; : .'|  ; ' |  | ' |   | ;\  \/  /`--'  /|   |  ' \   \  ',  / '   : |  ; .'
+:   ' | \.'|   |    \'   | '/  :  | : ;  ; | :   ' | \.'--'.     / '   :  |  ;   :    /  |   | '`--'
+:   : :-'  |   :   .'|   :    /'  :  `--'   \:   : :-'   `--'---'  ;   |.'    \   \ .'   '   : |
+|   |.'    |   | ,'   \   \ .' :  ,      .-./|   |.'               '---'       `---`     ;   |.'
+`---'      `----'      `---`    `--`----'    `---'                                       '---'
+RECURSION:
+It is simply a function calling itself.
+It has two basic parts one is the recursive call to itself and the other one is a base condition.
+NOTE: whenever a function is called it will go in the stack memory and stay there until it finishes execution.
+  ____ _____  _    ____ _  __   _____     _______ ____  _____ _     _____        __
+ / ___|_   _|/ \  / ___| |/ /  / _ \ \   / / ____|  _ \|  ___| |   / _ \ \      / /
+ \___ \ | | / _ \| |   | ' /  | | | \ \ / /|  _| | |_) | |_  | |  | | | \ \ /\ / /
+  ___) || |/ ___ \ |___| . \  | |_| |\ V / | |___|  _ <|  _| | |__| |_| |\ V  V /
+ |____/ |_/_/   \_\____|_|\_\  \___/  \_/  |_____|_| \_\_|   |_____\___/  \_/\_/
+
+Even if a function calls itself it will act a new function in the stack memory and take space,
+when this space exceeds the memory allocated by the computer it will give the infamous "StackOverflow" error!
+to avoid this we need a base condition! which is just a simple if check.
