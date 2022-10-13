@@ -9,6 +9,7 @@ public class Fibonacci {
         if(n<2){
             return n;
         }
+        //this is called as recursive relation!
         return fibonacci(n-1)+fibonacci(n-2);
     }
 }
