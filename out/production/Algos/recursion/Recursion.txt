@@ -26,3 +26,14 @@ NOTE: whenever a function is called it will go in the stack memory and stay ther
 Even if a function calls itself it will act a new function in the stack memory and take space,
 when this space exceeds the memory allocated by the computer it will give the infamous "StackOverflow" error!
 to avoid this we need a base condition! which is just a simple if check.
+
+Q) Why recursion?
+Ans: 1>It helps to solve bigger/complex problems in an easy way.
+     2>You can convert recursion solutions into iteration and vice versa.
+NOTE: Space complexity is NOT constant.
+Q) How to find that a problem can be solved with recursion?
+Ans: >check if it can be break down into smaller problems.
+     >the base conditions will come form the information already given to us.
+NOTE: the formula for the recursion is known as recurrence relation.
+ex: for fibonacci number the recursive relation for nth number will be
+    f(n) = f(n-1) + f(n-2)
