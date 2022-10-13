@@ -37,3 +37,38 @@ Ans: >check if it can be break down into smaller problems.
 NOTE: the formula for the recursion is known as recurrence relation.
 ex: for fibonacci number the recursive relation for nth number will be
     f(n) = f(n-1) + f(n-2)
+-----------------------------------------------------------------------------------------------------
+HOW TO TACKLE A RECURSION PROBLEM:
+step1> Identify if you can break down the problem into smaller problems.
+step2> Write the recurrence relation if needed.
+step3> Draw the recursive tree.(Very IMPORTANT)
+step4> Remember this while drawing the tree:
+        1> See the flow of functions how they are getting into stack.
+        2> Identify and focus on the left tree calls and then the right tree calls.
+        3> (Draw again and again on pen and paper to understand more clearly)
+        4> (Use a debugger to see the flow)
+step5> See how values and what type of values are returned at each step!,
+       see where the function call is coming out to.
+       At last main method gets removed from the stack.
+------------------------------------------------------------------------------------------------------
+WORKING WITH VARIABLES IN RECURSION:
+we can have 3 types of variables:
+    > In the Argument : variables that have to go into the following recursive function
+    > In the Return type
+    > In the body of the function : variables that are unique to that call only.
+example: if we do Binary Search with recursion,
+         the variables we're going to have are Start, End, Middle, the Array, the Target
+         so, The return type is simple as we are returning the index of the target.
+         now we want to reduce the size of the array to half in each recursive call(as done in BinarySearch)
+         the size of the array is determined by the start and end,
+         so we have to put the start and end in the ARGUMENTS along with the array and target,
+         and as the middle is calculated with start and end it will be specific to each call,
+         so it will stay in the body!
+We can say that all the variables that are independent will stay in arguments,
+and the variables that are dependent on other variables will stay in body,
+(as they can be easily calculated with the independent variables)
+-----------------------------------------------------------------------------------------------------
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+NOTE: IF YOU HAVE A RETURN TYPE IN THE FUNCTION THEN ALSO PUT THE RETURN STATEMENT IN THE SUB CALLS
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+------------------------------------------------------------------------------------------------------
