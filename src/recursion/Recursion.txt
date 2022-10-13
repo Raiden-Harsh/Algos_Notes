@@ -37,3 +37,16 @@ Ans: >check if it can be break down into smaller problems.
 NOTE: the formula for the recursion is known as recurrence relation.
 ex: for fibonacci number the recursive relation for nth number will be
     f(n) = f(n-1) + f(n-2)
+
+HOW TO TACKLE A RECURSION PROBLEM:
+step1> Identify if you can break down the problem into smaller problems.
+step2> Write the recurrence relation if needed.
+step3> Draw the recursive tree.(Very IMPORTANT)
+step4> Remember this while drawing the tree:
+        1> See the flow of functions how they are getting into stack.
+        2> Identify and focus on the left tree calls and then the right tree calls.
+        3> (Draw again and again on pen and paper to understand more clearly)
+        4> (Use a debugger to see the flow)
+step5> See how values and what type of values are returned at each step!,
+       see where the function call is coming out to.
+       At last main method gets removed from the stack.
