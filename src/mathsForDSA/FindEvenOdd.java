@@ -1,6 +1,6 @@
 package mathsForDSA;
 
-public class findEvenOdd {
+public class FindEvenOdd {
     public static void main(String[] args) {
         int n = 56;
         System.out.println(isOdd(n));
@@ -16,6 +16,7 @@ public class findEvenOdd {
          00000000 -> 0 which is the last digit!
          as all the other numbers are the power of 2,so they are bound to be even but the last digit will,
          determine if the number is even or odd.
+         NOTE: the last digit is known as LSB(Least Significant Bit)
          */
         return (n & 1) ==1;
     }
