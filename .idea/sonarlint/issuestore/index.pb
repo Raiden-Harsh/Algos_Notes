@@ -7,3 +7,27 @@ O
 +src/mathsForDSA/SetAndResetSpecificBit.java,5\4\540b8745188be145b89dd952a570dfae613c26e9
 P
  src/mathsForDSA/MagicNumber.java,9\0\90f1971193c03067129768bd20dd3037cdf04eac
+S
+#src/mathsForDSA/NumberOfDigtis.java,0\9\095a56e9905a345f3178f0900deb41b75c4e4058
+O
+src/mathsForDSA/PowerOfTwo.java,c\e\ce554accbb0ca03e2c2f47f18246239dd47ca8e7
+J
+src/mathsForDSA/Power.java,4\d\4da65064f88eb6e7aa16a11693573e8b073f002c
+T
+$src/mathsForDSA/SignificantBits.java,9\c\9ce81b3e67f22d5f23cbfa996e80ab21ebb563a6
+M
+src/mathsForDSA/RangeXor.java,a\1\a1fcc1250c712ecb041a7124005e54ae639b9a4c
+Z
+*src/mathsForDSA/FlippingAnImageGoogle.java,5\f\5f35d1e6b5d0a3b7c753ee3b69bf95e137d6eab0
+J
+src/mathsForDSA/Sieve.java,0\9\09ba58b20b16afcc3d33e66ec5d7aed4f8f1204c
+U
+%src/mathsForDSA/BinarySearchSQRT.java,7\7\77df374cd6eb59f490525052fc27cca9768acd51
+O
+src/mathsForDSA/NewtonSQRT.java,6\e\6e1a1728f7ebd45b78e3e869f76a56a2c2304e1c
+L
+src/mathsForDSA/Factors.java,3\4\3438eb28574b00ba28dbf1d6b146597148c18f0d
+L
+src/mathsForDSA/GCD_LCM.java,7\e\7e4a920ec443d8f3e3138f0627a416ee57db56d7
+J
+src/mathsForDSA/Prime.java,f\c\fce14ddeccb966afd496a6fe91c1d2529865b77d
