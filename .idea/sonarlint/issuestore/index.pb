@@ -31,3 +31,25 @@ L
 src/mathsForDSA/GCD_LCM.java,7\e\7e4a920ec443d8f3e3138f0627a416ee57db56d7
 J
 src/mathsForDSA/Prime.java,f\c\fce14ddeccb966afd496a6fe91c1d2529865b77d
+O
+src/recursion/level_1/Nto1.java,9\1\9147ced96b0cfecb1f84e0569b6c94504a8fde1f
+T
+$src/recursion/level_1/Factorial.java,3\b\3b2241d10e132d674614c63634664a67ac20a98d
+V
+&src/recursion/level_1/SumOfDigits.java,7\3\737e0cc59995e82d1e8a2035d29b719e9151403f
+Z
+*src/recursion/level_1/ProductOfDigits.java,d\8\d818ac7aee49656a06516a7b7cbb94a7775ff9a6
+R
+"src/recursion/level_1/Concept.java,7\9\7933625e7f0d6e696162aa5c50aab02d710a1ea2
+R
+"src/recursion/level_1/Reverse.java,f\b\fb437a0076fe0a3fc0a5d3181faa97371ebc1469
+U
+%src/recursion/level_1/Palindrome.java,4\7\47746bc481b517bd365efe5a15809156004ed864
+U
+%src/recursion/level_1/CountZeros.java,b\4\b48c00676abdbc26ab793d3182c016959060a17c
+N
+src/recursion/level_1/Sum.java,9\5\9518acc654d08dd14706db40354a16ef07d3a28e
+R
+"src/recursion/level_1/stepsLC.java,b\c\bc8134d3a9724cd8511034172f6a57526e2d19b6
+Z
+*src/binary_search/RotatedBinarySearch.java,d\6\d69fcc72e04d886e544ca50766d2364ec2c27666
