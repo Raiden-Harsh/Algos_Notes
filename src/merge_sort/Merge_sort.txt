@@ -1,0 +1,59 @@
+
+███╗░░░███╗███████╗██████╗░░██████╗░███████╗
+████╗░████║██╔════╝██╔══██╗██╔════╝░██╔════╝
+██╔████╔██║█████╗░░██████╔╝██║░░██╗░█████╗░░
+██║╚██╔╝██║██╔══╝░░██╔══██╗██║░░╚██╗██╔══╝░░
+██║░╚═╝░██║███████╗██║░░██║╚██████╔╝███████╗
+╚═╝░░░░░╚═╝╚══════╝╚═╝░░╚═╝░╚═════╝░╚══════╝
+
+░██████╗░█████╗░██████╗░████████╗
+██╔════╝██╔══██╗██╔══██╗╚══██╔══╝
+╚█████╗░██║░░██║██████╔╝░░░██║░░░
+░╚═══██╗██║░░██║██╔══██╗░░░██║░░░
+██████╔╝╚█████╔╝██║░░██║░░░██║░░░
+╚═════╝░░╚════╝░╚═╝░░╚═╝░░░╚═╝░░░
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+𝔖𝔱𝔢𝔭𝔰 𝔱𝔬 𝔣𝔬𝔩𝔩𝔬𝔴->
+Step_1) Divide the array into two parts.
+Step_2) Sort individual part using recursion.
+Step_3) Merge both the sorted parts.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+HOW-TOs:
+A) Merge two sorted arrays.
+   say, we have two sorted arrays.
+   arr1={1,5,7,12,14,35}
+   arr2={2,3,4,6}
+   To merge them, we will create a new array,(with size of arr1 + arr2)
+   Now, we will have pointers for both arrays starting at 0'th index.
+   we will compare which element is smaller,
+   put in the new array, increase the pointer in that array to next element.
+NOTE: If one array gets empty first, then all the remaining elements of the other array will be added
+      in the new array.
+      EXAMPLE:
+      arr1[0]<arr2[0] so in new array we put arr1[0] and increase the pointer(in arr1) to 1.
+      now we compare,
+      arr1[1]>arr2[0] so we put arr2[0] in new array and move pointer to next element.
+      Finally, new_array = {1,2,3,4,5,6,7,12,14,35}
+
+B) Recursive calls are working.
+   say, we have an array
+   arr ={8,3,4,12,5,6}
+   as per given steps, it will be divided into two separate arrays.
+   {8,3,4} and {12,5,6}
+   recursion calls will be like,
+   hey recursion, sort {8,3,4} and {12,5,6} so that I can merge them,
+   {8,3,4} be like ok! but first sort {8,3} and {4} for me!!
+   {8,3} be like OK but first sort {8} and {3} for me...
+   {8} be like I am a single element array, thus I am sorted. so I am returning myself...
+   (this will be the base condition)...
+   similarly, {3} will be returning itself...
+   when they get return, they will be merged (as discussed in A)
+   so we get,{3,8} on the other hand {4} also return itself.
+   they will then merge to form {3,4,8}
+   this way we get one half sorted,
+   same will work for the second half as well,
+   finally they both will get merge, and we will get our sorted array.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Time Complexity : O(N*log(N))
