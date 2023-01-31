@@ -1,0 +1,57 @@
+
+   ____        _      _       _____            _
+  / __ \      (_)    | |     / ____|          | |
+ | |  | |_   _ _  ___| | __ | (___   ___  _ __| |_
+ | |  | | | | | |/ __| |/ /  \___ \ / _ \| '__| __|
+ | |__| | |_| | | (__|   <   ____) | (_) | |  | |_
+  \___\_\\__,_|_|\___|_|\_\ |_____/ \___/|_|   \__|
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Before Quick Sort:
+Q) What is a Pivot?
+It is basically any random element form the array!
+after first pass, the condition is :
+    > all the elements smaller than the pivot should be on the left side of pivot.
+    > all the elements larger than the pivot should be on the right side of the pivot.
+
+Q) How to Pick a pivot?
+A Pivot can be a-
+    > Random element
+    > Corner element
+    > Middle element
+
+Recurrence relation of Quick Sort:
+say, array have "N" total elements,
+     after pivot "K" elements goes to one side,
+     pivot itself is 1 element,
+     so element remaining on right is (N-K-1)
+
+     T(N) = T(K) + T(N-K-1) + O(N)
+     here,
+        T(N) = time taken to sort complete array
+        T(K) = time taken to sort left side of array
+        T(N-K-1) = time taken to sort right side of array
+        O(N) = time taken to sort one element
+------------------------
+Worst Case: A pivot is the smallest/largest number in the array.
+   this means, one side of array is zero!
+   so the time complexity will be:
+   T(N) = T(0) + T(N-0-1) + O(N)
+   T(N) = T(N-1) + O(N)
+   this will give a time complexity of : O(N²)
+   THIS IS BAD!!!
+   as the recurrence steps are only reduced by (N-1)
+Best Case: A pivot is the exact middle element.
+    this means, K = N/2
+    T(N) = T(N/2) + T(N- N/2 -1) + O(N)
+    T(N) = 2T(N/2) + O(N)
+    this will give a time complexity of : O(N*log(N))
+
+---------------------
+Important Observations:
+Quick-Sort is:
+    > Not-Stable: order of same elements may differ!
+    > In-Place: no new arrays are created, original array is being modified.
+    > MERGE-SORT IS BETTER FOR LINKED LIST AS THEY HAVE A RANDOM MEMORY ALLOCATION.
+----------------------

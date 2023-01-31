@@ -1,0 +1,12 @@
+
+…
+java:S1319$"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(¿¤§W
+y
+java:S1319$"dThe type of "list" should be an interface such as "List" rather than the implementation "ArrayList".(¿¤§W
+‹
+java:S13199"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ÿÁŸÈÿÿÿÿÿ
+S	java:S106	"9Replace this use of System.out or System.err by a logger.(àÎÓÿÿÿÿÿ
+N	java:S106
+"9Replace this use of System.out or System.err by a logger.(ÖşåË
+N	java:S106"9Replace this use of System.out or System.err by a logger.(Ô¹Æš
+M	java:S106"9Replace this use of System.out or System.err by a logger.(èÚÕ	
