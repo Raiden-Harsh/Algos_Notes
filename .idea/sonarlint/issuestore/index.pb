@@ -69,3 +69,13 @@ M
 src/merge_sort/Merge_sort.txt,3\8\387b2094468ba7b0d81cc4216414c794fa29e561
 M
 src/merge_sort/MergeSort.java,3\b\3b6e91c5cc7a660c1d58cf24932e1ad45f30b1b9
+U
+%src/insertion_sort/InsertionSort.java,c\3\c31af7a8be5022597f56a675982a8c6cc962ecf1
+U
+%src/insertion_sort/Insertion_Sort.txt,3\4\344db4b7a2828ec06f3f972f565da028d3e1c547
+M
+src/quick_sort/quick_sort.txt,9\5\95a6a8dde282661d3a03976411f1c33bdc67047d
+M
+src/quick_sort/QuickSort.java,a\c\ac6645a357c4e766ac13a6db45ac19563ce9fcd1
+X
+(src/string/String and String Builder.txt,8\b\8b92d8547fef56e286516a39f42e064d9eb1f876

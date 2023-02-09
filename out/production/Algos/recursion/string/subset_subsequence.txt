@@ -1,0 +1,22 @@
+---------------------------------------------------------
+when we talk about arrays we use the term subsets.
+when we talk about the strings we use the term subsequence.
+-----------------------------------------------------------
+Q) What is a subset?
+It is all the possible combination of elements from a given element,
+the order doest matter, as "ab" and "ba" will be considered as a same element...
+
+NOTE: THIS PATTERN OF TAKING AN ELEMENT OR REMOVING AN ELEMENT IS KNOWN AS SUBSET PATTERN.
+
+example: ['abc'] -> [a,b,c,ab,bc,ca,abc] these are the possible combinations.
+
+we can take, a processed and un-processed string to create all the possible answers.
+
+L1:                                           (""/"abc")
+L2:                               ("a"/"bc")       &        (""/"bc")
+L3:          ("ab"/"c")    &      ("a"/"c")                    ("b"/"c")    &      (""/"c")
+L4:  ("abc"/"")&("ab"/"")       ("ac"/"")&("a"/"")           ("bc"/"")&("b"/"")          ("c"/"")&(""/"")
+
+The above is the representation of the recursion tree.
+we will get our answers from level 4.
+-----------------------------------------------------------------------------

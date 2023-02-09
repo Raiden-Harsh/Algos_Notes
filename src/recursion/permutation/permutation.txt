@@ -1,0 +1,23 @@
+NOTE: for PERMUTATIONS and COMBINATIONS we will be using the subset method.
+i.e. take the processed and un-processed and at each call,
+     either take the first character or ignore it.
+
+PERMUTATION : simply means all the possible combinations where the position of the elements matter.
+ex: str = "abc"
+permutations -> {"abc", "acb", "cab", "bac", "bca", "cba"}
+
+=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~
+Recursive Tree :
+processed/un-processed
+
+                                        (""/"abc")
+L1:                                     ("a"/"bc")
+L2:                              ("ba"/"c") -- ("ab"/"c")
+L3:        ("cba"/"") ("bca"/"") ("bac"/"") -- ("cab"/"") ("acb"/"") ("abc"/"")
+
+here,
+    > L1,L2,L3 are the first,second,third levels respectively.
+    > -- is used to separate the left and the right calls of the tree.
+
+NOTE: here, the number of recursive calls at each level is dependent.
+      it is dependent on the size of processed. (No. of calls = size of processed + 1)
