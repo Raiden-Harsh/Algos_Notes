@@ -1,0 +1,21 @@
+Suppose, we can go to any direction in the maze like, U,D,L and R.
+so if we take our 3,3 maze example,
+when we go UP, we can get to the initial position of the maze, and so the recursion will continue to happen,
+giving us a stack overflow error.
+
+To overcome this, we can mark the cells as False as we get on them, so that, next recursion call will not
+go to the cells we already went to,
+but, this will give us a new problem as, suppose we went to (2,2) coordinate by DDRR,
+now all the cells are marked false {(0,0),(1,0),(2,0),(2,1),(2,2)}
+but when we get our answer at (2,2) we would return to (2,1),
+    from here, it should go to (1,1) -> (1,2) -> (2,2) to give another answer,
+    but, it won't do that as the (2,2) is already marked as false, so we can't get another answer,
+
+To overcome this we can mark the cell again True when we return form it,
+this thing is known as BACK TRACKING!!!
+
+it is like: what would be the state of the matrix if I didn't take the path, which I took.
+
+NOTE: thought process behind back tracking:
+           whenever we need to make a change, and then revert that change
+           we use BACK TRACKING.

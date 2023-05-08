@@ -57,8 +57,6 @@ U
 %src/recursion/arrays/IsAscending.java,e\c\ec4853bbee77e5594194704008cc1b2c9f27d30f
 V
 &src/recursion/arrays/LinearSearch.java,b\0\b0409939c5f1f4ed3fe26260e5e7f3ad8644e448
-]
--src/recursion/arrays/RotatedBinarySearch.java,c\1\c1e923b477107160d412b4bd98d0c0044816383c
 X
 (src/recursion/patterns/LeftTriangle.java,e\0\e0409f93a15c1abee5d49e482c9220acd5e3d020
 V
@@ -79,3 +77,17 @@ M
 src/quick_sort/QuickSort.java,a\c\ac6645a357c4e766ac13a6db45ac19563ce9fcd1
 X
 (src/string/String and String Builder.txt,8\b\8b92d8547fef56e286516a39f42e064d9eb1f876
+^
+.src/recursion/string/SimpleStringQuestion.java,6\8\68c9a640ec00061f4cec1852ee824010c3d8abea
+[
++src/recursion/string/subset_subsequence.txt,9\4\941499bc94e99dfb0621e830b18be4457162847e
+^
+.src/recursion/string/SubsetAndSubsequence.java,a\0\a07b08a59e87bcbc9316ded59f6bb9ae5656fb9b
+O
+src/recursion/string/Ascii.java,e\3\e3bc7ec74666d3c33e8464a8e89cb23d83ca35f5
+Y
+)src/recursion/string/IterationSubset.java,d\6\d69a10cda22315dda8109e2f3de5103f2f345582
+l
+<src/recursion/questions/LetterCombinationOfAPhoneNumber.java,f\0\f040a3076909d81c287cb7b19d53dadba97db3ab
+Q
+!src/recursion/questions/Dice.java,1\a\1ab67cd29c00765769b9616f9f051ad6020ab660
