@@ -19,3 +19,45 @@ it is like: what would be the state of the matrix if I didn't take the path, whi
 NOTE: thought process behind back tracking:
            whenever we need to make a change, and then revert that change
            we use BACK TRACKING.
+
+
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+N-Queens Problems :
+in these types of problems, we are given an input "n", and we have a chess board of n*n tiles.
+we have to place n number of queens on the chess board, such that they do not kill each other,
+These questions are like the maze problems, and they use the recursion and back tracking!
+
+to solve this we do these following steps :
+1> Base Condition : if the row == board.length (initially we provide row as 0)
+2> we check for (0,0) then when we place the queen, we move to the next row, and start placing
+   queen at each column starting from 0,
+3> we use a helper function isSafe to check if the given position is a valid position.(more on them later)
+4> when we come out of the calls, we do back tracking and mark the previous position as safe,
+5> then, in the base condition we use a helper function to display the board, and return 1.
+   that 1 will be added to the count, and is used to display the total number of valid solutions.
+
+Helper functions:
+1> display(board) : this is a simple helper function which will take the boolean[][] array as parameter,
+   it simply uses two loops to display the array, if it is true, it prints Q ese X
+
+2> isSafe(board,row,col) : this is used to check if the given index is safe to place the queen,
+   it will check for 3 directions viz. vertical up, diagonal left and diagonal right, as we are putting the
+   queens row wise, so below the given (row,col) there is no possibility of having a queen.
+
+   >>for vertical check we simply check from 0 to the row,
+     we use a for-i loop, and that will run row times
+
+   >>for diagonal left we use a loop, which will run for the minimum of row,col
+     and to go up diagonal left, row is reduced by i, and column is also reduced by i
+
+   >>for diagonal right we use a loop, which will run for the min of row,elements on the right side of row,
+     i.e. Min(row,board.length - col - 1)
+     and to go up diagonally right we reduce the row by i, and increase the column by i
+
+Recurrence relation :
+    T(N) = N * T(N-1) + O(N²)
+    where, N is the number of rows.
+
+when we solve this by Akkrabazi formula we get,
+    Time Complexity : T(N!)
