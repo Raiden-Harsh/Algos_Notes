@@ -1,6 +1,6 @@
 package linked_list;
 
-public class main {
+public class TestCustomLL {
     public static void main(String[] args) {
         CustomLinkedList linkedList = new CustomLinkedList();
         linkedList.insertFirst(7);
