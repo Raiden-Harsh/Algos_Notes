@@ -1,0 +1,29 @@
+
+██╗░░░░░██╗███╗░░██╗██╗░░██╗███████╗██████╗░  ██╗░░░░░██╗░██████╗████████╗
+██║░░░░░██║████╗░██║██║░██╔╝██╔════╝██╔══██╗  ██║░░░░░██║██╔════╝╚══██╔══╝
+██║░░░░░██║██╔██╗██║█████═╝░█████╗░░██║░░██║  ██║░░░░░██║╚█████╗░░░░██║░░░
+██║░░░░░██║██║╚████║██╔═██╗░██╔══╝░░██║░░██║  ██║░░░░░██║░╚═══██╗░░░██║░░░
+███████╗██║██║░╚███║██║░╚██╗███████╗██████╔╝  ███████╗██║██████╔╝░░░██║░░░
+╚══════╝╚═╝╚═╝░░╚══╝╚═╝░░╚═╝╚══════╝╚═════╝░  ╚══════╝╚═╝╚═════╝░░░░╚═╝░░░
+
+Why to use Linked List if we already have a array list?
+> when we use an array list, to accommodate (size + 1)'th element, a new array is created with the size of N*2
+and then the items of the first array list is copied to it, even though it have a constant time complexity O(1),
+it is still a bottleneck,
+the internal implementation of the array list is also arrays, so if we want a data structure, which is more efficient
+in terms of memory management, and shrink and grow frequently we can use linked list.
+
+NOTE: in java the memory allocation of array is not continuous.
+
+Common terms used in the linked list
+    > NODE : it is like a single box in the array
+             it contains, its value and the reference of the next node
+    > Head : it is a reference variable, which will mark the start of the linked list
+    > Tail : it is also a reference variable which will mark the end of the linked list
+
+
+Type of linked list -
+    > singly linked list ->( just know about the next node)
+    > doubly linked list -> ( also know about the previous node i.e. can go back )
+    > circular linked list -> ()
+
