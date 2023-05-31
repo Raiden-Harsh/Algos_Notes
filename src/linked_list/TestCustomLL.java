@@ -37,6 +37,15 @@ public class TestCustomLL {
         System.out.println(ll.delete(2));
         ll.display();
         System.out.println(ll.find(5));
+        // adding in LL using recursion
+        CustomLinkedList llr = new CustomLinkedList();
+        llr.insertFirst(1);
+        llr.insertFirst(9);
+        llr.insertFirst(5);
+        llr.insertFirst(3);
+        llr.display();
+        llr.insertRecursion(3,7);
+        llr.display();
 
     }
 }

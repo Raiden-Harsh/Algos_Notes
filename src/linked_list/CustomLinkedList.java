@@ -50,6 +50,26 @@ public class CustomLinkedList {
         temp.next = node;
         size++;
     }
+    // insert in LL using recursion
+    // observation: we can have two types of method in recursion
+    // 1) void return type, and made changes in the linked list
+    // 2) node return type, and the list node is returned to change the structure of the LL
+
+    public void insertRecursion(int index, int val) {
+        head = insertRec(index, val, head);
+    }
+
+    // hidden implementation
+    private Node insertRec(int index, int val, Node node) {
+        // base condition
+        if (index == 0) {
+            Node temp = new Node(val, node);
+            size++;
+            return temp;
+        }
+        node.next = insertRec(--index, val, node.next);
+        return node;
+    }
 
     public int deleteFirst() {
         int val = head.value;
@@ -67,11 +87,12 @@ public class CustomLinkedList {
         }
         return node;
     }
+
     public int find(int val) {
         Node node = head;
         int count = 0;
-        while (node != null){
-            if(node.value == val){
+        while (node != null) {
+            if (node.value == val) {
                 return count;
             }
             node = node.next;
@@ -133,5 +154,22 @@ public class CustomLinkedList {
         public Node(int value) {
             this.value = value;
         }
+    }
+
+    // todo: from here on these methods are for questions
+
+    public void removeDuplicate() {
+        Node node = head;
+
+        while (node.next != null) {
+            if (node.value == node.next.value) {
+                node.next = node.next.next;
+                size--;
+            } else {
+                node = node.next;
+            }
+        }
+        tail = node;
+        tail.next = null;
     }
 }

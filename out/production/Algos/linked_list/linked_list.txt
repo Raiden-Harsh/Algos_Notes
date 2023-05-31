@@ -57,3 +57,8 @@ node -> | ref variable of next node |
 
 NOTE: circular Linked List will only point to null if it is empty.
       for a single element both head and tail will point to the same node.
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+~~~~~~~~~~~~~*Questions that are asked in LL*~~~~~~~~~~~~~~~~~
+> Insert in a LL using recursion.
+    -> basically we return a node, such that the node from which it was called, its next will contain the returned node.
+> Remove duplicates from a sorted LL.
