@@ -1,0 +1,7 @@
+
+Q	java:S125	"<This block of commented-out lines of code should be removed.(Á¤Ÿ
+G
+java:S1197",Move the array designators [][] to the type.(Ì‘Àçúÿÿÿÿ
+E	java:S106"+Replace this use of System.out by a logger.(àÉï¶ıÿÿÿÿ
+@	java:S106"+Replace this use of System.out by a logger.(Íÿ‚†
+P	java:S125/"<This block of commented-out lines of code should be removed.(ôú¥S

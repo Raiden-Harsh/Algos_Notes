@@ -6,14 +6,14 @@
 ███████╗██║██║░╚███║██║░╚██╗███████╗██████╔╝  ███████╗██║██████╔╝░░░██║░░░
 ╚══════╝╚═╝╚═╝░░╚══╝╚═╝░░╚═╝╚══════╝╚═════╝░  ╚══════╝╚═╝╚═════╝░░░░╚═╝░░░
 
-Why to use Linked List if we already have a array list?
+Why use Linked List if we already have an array list?
 > when we use an array list, to accommodate (size + 1)'th element, a new array is created with the size of N*2
 and then the items of the first array list is copied to it, even though it have a constant time complexity O(1),
 it is still a bottleneck,
 the internal implementation of the array list is also arrays, so if we want a data structure, which is more efficient
 in terms of memory management, and shrink and grow frequently we can use linked list.
 
-NOTE: in java the memory allocation of array is not continuous.
+NOTE: in java, the memory allocation of an array is not continuous.
 
 Common terms used in the linked list
     > NODE : it is like a single box in the array
@@ -24,10 +24,10 @@ Common terms used in the linked list
 
 Type of linked list -
     > singly linked list ->( just know about the next node)
-    > doubly linked list -> ( also know about the previous node i.e. have one more reference variable like preivous )
+    > doubly linked list -> ( also know about the previous node i.e. have one more reference variable like previous )
     > circular linked list -> (it's start is connected to end, i.e. nothing points to null, unless the list is empty)
 
-Basic structure of singly linked list:
+Basic structure of a singly linked list:
 
 reference variable : head, tail
          | variable for value          |
@@ -35,9 +35,9 @@ node  -> | reference variable for next |
          |                             |
 
     -> head will point to the first node
-    -> tail will point the last node ( ref variable for next in tail will be null )
+    -> tail will point the last node (ref variable for next in tail will be null)
 
-Basic structure of doubly linked list:
+Basic structure of a doubly linked list:
 
 reference variable : head, tail
         | variable for value             |
@@ -45,18 +45,18 @@ node -> | ref variable for next node     |
         | ref variable for previous node |
 
     -> head will point to first node (head's previous will be null)
-    -> tail will point to last node (tail's next will be null )
+    -> tail will point to last node (tail's next will be null)
 
 NOTE: these reference variables are of type node only!
 
-Basic structure of a circular linked list :
-reference variable : head, tail
+Basic structure of a circular linked list:
+reference variable: head, tail
         | variable for value        |
 node -> | ref variable of next node |
         |                           |
 
 NOTE: circular Linked List will only point to null if it is empty.
-      for a single element both head and tail will point to the same node.
+      for a single element, both head and tail will point to the same node.
 -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 ~~~~~~~~~~~~~*Questions that are asked in LL*~~~~~~~~~~~~~~~~~
 > Insert in a LL using recursion.

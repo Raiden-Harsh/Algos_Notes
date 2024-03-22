@@ -1,0 +1,12 @@
+
+N
+java:S1854"8Remove this useless assignment to local variable "arr2".(ù”Üş
+N
+java:S1854"8Remove this useless assignment to local variable "arr1".(ºë·
+?
+java:S1481")Remove this unused "arr1" local variable.(ºë·
+?
+java:S1481")Remove this unused "arr2" local variable.(ù”Üş
+?	java:S106
+"+Replace this use of System.out by a logger.(êÎt
+E	java:S106"+Replace this use of System.out by a logger.(¢é¤¦ıÿÿÿÿ
