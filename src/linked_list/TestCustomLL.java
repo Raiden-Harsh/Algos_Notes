@@ -2,7 +2,7 @@ package linked_list;
 
 public class TestCustomLL {
     public static void main(String[] args) {
-        CustomLinkedList linkedList = new CustomLinkedList();
+       /* CustomLinkedList linkedList = new CustomLinkedList();
         linkedList.insertFirst(7);
         linkedList.insertFirst(6);
         linkedList.insertFirst(5);
@@ -45,7 +45,16 @@ public class TestCustomLL {
         llr.insertFirst(3);
         llr.display();
         llr.insertRecursion(3,7);
-        llr.display();
+        llr.display();*/
+        CustomLinkedList cll = new CustomLinkedList();
+        cll.insert(5,0);
+        cll.insert(7,1);
+        cll.insert(1,2);
+        cll.insert(9,3);
+        cll.insert(10,4);
+        cll.display();
+       cll.insertRecursion(3,69);
+       cll.display();
 
     }
 }
