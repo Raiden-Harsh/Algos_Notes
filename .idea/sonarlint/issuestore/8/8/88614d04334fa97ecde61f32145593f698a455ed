@@ -1,12 +1,12 @@
 
-Š
-java:S2259x"BA "NullPointerException" could be thrown; "temp" is nullable here.(ƒ²¼‰ÿÿÿÿÿ8·çôÉí1J$bd02d3d2-b99e-46dd-824b-312def91b001
 …
-java:S2259ˆ"BA "NullPointerException" could be thrown; "head" is nullable here.(»ãÑB8·çôÉí1J$7d5291e2-6155-4c1d-bb85-a710214a67cc
-r	java:S106G"+Replace this use of System.out by a logger.(ÀÏ°ıÿÿÿÿ8·çôÉí1J$d60f2e00-f732-4513-a1e0-4cad3f94dc0d
+java:S2259ˆ"BA "NullPointerException" could be thrown; "head" is nullable here.(»ãÑB8·çôÉí1J$fe218d2e-a911-49e7-b506-fd6d7bcec609
+Š
+java:S2259x"BA "NullPointerException" could be thrown; "temp" is nullable here.(ƒ²¼‰ÿÿÿÿÿ8·çôÉí1J$ea872a34-4b0a-4994-a22f-791ca2fc538e
+r	java:S106G"+Replace this use of System.out by a logger.(ÀÏ°ıÿÿÿÿ8·çôÉí1J$47b509af-ad4d-4223-bd45-f439e81ac249
 m
-java:S1481J"*Remove this unused "count" local variable.(æÕ¿¼8·çôÉí1J$2a80b233-7cfe-409a-ba2c-c984de35828e
-m	java:S106L"+Replace this use of System.out by a logger.(ûŠ·Ô8·çôÉí1J$65981aed-186c-4e20-a187-25c7205a14f0
-r	java:S106Q"+Replace this use of System.out by a logger.(¡¶”´ÿÿÿÿÿ8·çôÉí1J$04d80d71-f95b-447b-8006-a76b0932784d
-r	java:S106R"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8·çôÉí1J$c592e87e-2943-4509-961e-4c241a870b05
-r	java:S106c"+Replace this use of System.out by a logger.(áë±»üÿÿÿÿ8·çôÉí1J$2f6ef607-2a11-4af2-b637-68f14d5f9fcd
+java:S1481J"*Remove this unused "count" local variable.(æÕ¿¼8·çôÉí1J$5c089057-91ba-4831-95ba-011c0ed4d20a
+m	java:S106L"+Replace this use of System.out by a logger.(ûŠ·Ô8·çôÉí1J$baae6c07-b936-4eff-95fe-e9f5ecb6da47
+r	java:S106Q"+Replace this use of System.out by a logger.(¡¶”´ÿÿÿÿÿ8·çôÉí1J$49b1a310-e736-4972-bac4-d8a0bcd90998
+r	java:S106R"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8·çôÉí1J$74a853aa-0bba-417e-a156-9a63aab4571d
+r	java:S106c"+Replace this use of System.out by a logger.(áë±»üÿÿÿÿ8·çôÉí1J$47cf8d3d-0ec5-4a2a-9fde-9e487ef13e0d
