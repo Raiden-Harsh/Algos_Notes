@@ -1,0 +1,31 @@
+ ____  _             _       ___      ___
+/ ___|| |_ __ _  ___| | __  ( _ )    / _ \ _   _  ___ _   _  ___
+\___ \| __/ _` |/ __| |/ /  / _ \/\ | | | | | | |/ _ \ | | |/ _ \
+ ___) | || (_| | (__|   <  | (_>  < | |_| | |_| |  __/ |_| |  __/
+|____/ \__\__,_|\___|_|\_\  \___/\/  \__\_\\__,_|\___|\__,_|\___|
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+
+Stack:
+A data structure in which the elements are "stacked" on top of each other (just like plates in a buffet), you place the
+plates at bottom to top and pick up from top fist, so it uses FILO (First In Last Out) or we can say
+LIFO(Last In First Out).
+    - push() : to add elements in Stack.
+    - pop()  : to remove elements form Stack.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+SideNote: whenever a data is removed form a data structure it is a convention to return/print it, so that we can know
+what is being getting removed.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Queue:
+A data structure in which the elements are forming a "line/Queue" (i.e. A line in McDonald's, which follows first come,
+first served principle) so like that it use FIFO (First In First Out).
+In java Queue is but an interface, i.e. it doesn't have its own implementations, so, it uses LinkedList for its
+add,remove,etc. operation.
+
+Deque(Double Ended Queue):
+A data structure like the Queue itself, with the difference being, we can both add and remove from both its ends.
+like, we can insert and remove from the front of the queue, and we can insert and remove from the back of the queue
+as well.
+It is also an interface, and the class we generally use with it is ArrayDeque.
