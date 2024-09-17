@@ -12,6 +12,13 @@ public class TestCustomStack {
         System.out.println(cs.pop());
         System.out.println(cs.pop());
 
+        CustomStack ds = new DynamicStack(1);
+        ds.push(99);
+        ds.push(100);
+
+        // able to add the 100 as well
+        System.out.println(ds.peek());
+
 
 
 

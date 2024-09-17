@@ -1,7 +1,7 @@
 package stack_and_queue;
 
 public class CustomStack {
-    private int[] data;
+    protected int[] data;
     private static final int DEFAULT_SIZE = 10;
     private int ptr = -1;
 
@@ -43,7 +43,7 @@ public class CustomStack {
     }
 
 
-    private boolean isFull() {
+    protected boolean isFull() {
         // ptr is at the last index or
         return ptr + 1 > this.data.length - 1;
     }
