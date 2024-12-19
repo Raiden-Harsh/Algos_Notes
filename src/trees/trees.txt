@@ -1,0 +1,184 @@
+
+  _______
+ |__   __|
+    | |_ __ ___  ___  ___
+    | | '__/ _ \/ _ \/ __|
+    | | | |  __/  __/\__ \
+    |_|_|  \___|\___||___/
+
+
+-------------------------------------------
+
+Q) What are Trees?
+A) Trees are a data structure, somewhat like linked list with the difference being, it has one parent node, and two
+   child nodes. Each Node can represent anything, and it contains child nodes which are connected through edges.
+
+Q) Why do we need trees?
+A) We use trees as they provide a O(log N) time complexity for the CRUD operations. As special type of tress, like
+   binary trees are used(only 2 child nodes), or binary search trees are used(only 2 child, where left child should be
+   smaller than the right child), stores data in sorted manner.
+
+Q) What are the limitations of a binary tree?
+A) If unbalanced, a binary tree will have time complexity of O(N).
+   unbalanced binary tree look like this :
+
+                                       (A)
+                                  (B)<-   -> (C)
+                                      null <-   -> (D)
+                                            null <-   -> (E)
+Q) Where is the binary tree is used?
+A) They are used at many places like:
+    - File Systems
+    - Databases
+    - Networking/Network routing
+    - Complex math equations
+    - Decision trees / Machine Learning
+    - Huffman Coding / Compressing of files
+    - Data Structures (Heaps,Graphs,etc.)
+
+Q) Terminology of binary trees?
+A) These are the parts of a binary tree:
+
+   - ROOT : topmost node, starting point of the tree.
+       A  <-- Root
+      / \
+     B   C
+
+   - NODE : fundamental unit of tree, that have data and links to child nodes.
+        - Internal NODE: at least one child.
+        - Leaf NODE: no children.
+       A
+      / \
+     B   C
+
+     A -> root node, B & C -> internal if they have children, or else leaf nodes.
+
+   - Parent & Child:
+        - A -> Parent of B and C
+        - B & C -> Children of A
+            A
+           / \
+          B   C
+
+   - LEAF : A node with no children
+        - B,D,E are Leaf nodes.
+
+            A
+           / \
+          B   C
+             / \
+            D   E
+   - EDGE : The connection/link between two nodes.
+        -edges : A --> B & A --> C
+            A
+           / \
+          B   C
+
+   - LEVEL : Depth of a node from root
+        - root node is @ 0'th level
+
+            A  (Level 0)
+           / \
+          B   C (Level 1)
+             / \
+            D   E (Level 2)
+
+   - DEPTH : it is like level but sometimes indexed form 1 instead of 0
+            A  (Depth 0)
+           / \
+          B   C (Depth 1)
+             / \
+            D   E (Depth 2)
+
+   - HEIGHT : The longest path form a Node to any leaf node.
+            A
+           / \
+          B   C
+             / \
+            D   E
+
+        - Height of B = 0 (Leaf Node)
+        - Height of A = 2 (A -> C -> D or A -> C -> E)
+        - Height of C = 1 (C -> D or C -> E)
+        - Height of a non-leaf node is 1+ height of its children.
+
+   - ANCESTOR : Any node that lies on the path from the root to the current node.
+
+               A
+              / \
+             B   C
+                / \
+               D   E
+
+        - Ancestor of D are A and C
+        - Ancestor of E are A and C
+
+   - DESCENDANT : Any node that lies in the subtree of a given node.
+
+            A
+           / \
+          B   C
+             / \
+            D   E
+
+        - Descendant of A are B,C,D,E
+        - Descendant of C are D,E
+
+   - SIBLING : Nodes that have same parent.
+             A
+            / \
+           B   C
+              / \
+             D   E
+
+        - B,C are sibling (parent A)
+        - D,E are sibling (parent C)
+
+   - PATH : A sequence of nodes and edges leading from one node to another.
+
+            A
+           / \
+          B   C
+             / \
+            D   E
+
+       - path from A to E is A -> C -> E
+
+   - SUBTREE : A portion of the tree that includes a node and all its descendant.
+            A
+           / \
+          B   C
+             / \
+            D   E
+
+        - the subtree with root C include nodes C,D and E.
+
+   - DEGREE : The number of children a node has.
+            A
+           / \
+          B   C
+             / \
+            D   E
+
+       - Degree of A = 2 (B,C)
+       - Degree of B = 0 (leaf node)
+       - Degree of C = 2 (D,E)
+
+   - FOREST : A collection of disjoint trees.
+
+            A     X
+           / \   / \
+          B   C Y   Z
+
+        - if you remove the node of a tree, the remaining components will create a forest.
+
+Q) What are the types of binary trees?
+A) Following are the types of binary trees:
+
+    -
+
+
+
+
+
+
